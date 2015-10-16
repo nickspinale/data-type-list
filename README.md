@@ -1,2 +1,2 @@
-# data-type-list
-Type-level analog of Data.List from base
+# data-type-util
+Type-level analogs of some basic Data. *  modules
