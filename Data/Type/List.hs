@@ -6,6 +6,14 @@
 
 module Data.Type.List
     ( (:++:)
+    , Length
+    , Map
+    , Foldl
+    , Foldl1
+    , Foldr
+    , Foldr1
+    , Sum
+    , Replicate
     ) where
 
 import GHC.TypeLits

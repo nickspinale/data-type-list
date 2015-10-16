@@ -1,11 +1,11 @@
 {-# LANGUAGE TypeOperators #-}
-{-# LANGUAGE PolyKinds #-}
 {-# LANGUAGE DataKinds #-}
 {-# LANGUAGE TypeFamilies #-}
 {-# LANGUAGE UndecidableInstances #-}
 
 module Data.Type.Peano
     ( Peano(..)
+    , FromPeano
     ) where
 
 import GHC.TypeLits
