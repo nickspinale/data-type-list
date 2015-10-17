@@ -14,6 +14,7 @@ module Data.Type.List
     , Foldr1
     , Sum
     , Replicate
+    , Reverse
     ) where
 
 import GHC.TypeLits
@@ -55,3 +56,9 @@ type family Sum (xs :: [Nat]) :: Nat where
 type family Replicate (n :: Peano) (x :: a) :: [a] where
     Replicate Z x = '[]
     Replicate (S n) x = x ': Replicate n x
+
+type Reverse x = ReverseAux '[] x
+
+type family ReverseAux acc rest where
+    ReverseAux acc '[] = acc
+    ReverseAux acc (x ': xs) = ReverseAux (x ': acc) xs
